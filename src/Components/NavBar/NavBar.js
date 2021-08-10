@@ -8,10 +8,10 @@ const NavBar = () => {
             <Navbar bg="dark" variant="dark"
                 sticky="top" expand="sm" collapseOnSelect>
                 <Navbar.Brand>
-                    Logo
+                    Restaurant
                 </Navbar.Brand>
 
-                <Navbar.Toggle className="coloring" />
+                <Navbar.Toggle />
                 <Navbar.Collapse>
                     <Nav>
                         <Nav.Link href="#home">Home</Nav.Link>
