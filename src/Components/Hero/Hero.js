@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './style.Hero.css';
-import Button from 'react-bootstrap/Button';
 
 
 const Hero = () => {
@@ -8,16 +8,15 @@ const Hero = () => {
     const { search, setSearch } = useState('');
 
     return (
-        <section className="hero-aria">
+        <section className="hero d-flex align-items-center text-center">
             <div className="container">
-                <div className="row">
-                    <div className="col text-center hero-content">
-                        <h2>Order your food instantly!</h2>
-                        <div className="hero-input">
-                            <input type="text" value={search} onChange={(e) => setSearch(e.target.value.trim())} placeholder="Search food items" />
-                            <Button className="hero-input button" variant="danger">Search</Button>
-                        </div>
-                    </div>
+                <h1>Order the best dishes from us right now!</h1>
+
+                <div className="search-box col-md-6 my-5 mx-auto">
+                    <input id="query" value={search} onChange={(e) => setSearch(e.target.value.trim())} type="text" className="form-control" placeholder="Search Food Item" />
+                    <Link to={"/search=" + search}>
+                        <button onClick={() => window.scrollBy(0, 500)} className="btn btn-danger search-btn btn-rounded">Search</button>
+                    </Link>
                 </div>
             </div>
         </section>
