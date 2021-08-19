@@ -1,5 +1,5 @@
 .food-area nav li{
-    color: black;
+    color: black!important;
     cursor: pointer;
     font-weight: 900;
 }
