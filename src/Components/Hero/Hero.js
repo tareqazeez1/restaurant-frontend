@@ -13,7 +13,7 @@ const Hero = () => {
                 <h1>Order the best dishes from us right now!</h1>
 
                 <div className="search-box col-md-6 my-5 mx-auto">
-                    <input id="query" value={search} onChange={(e) => setSearch(e.target.value.trim())} type="text" className="form-control" placeholder="Search Food Item" />
+                    <input id="query" value={search} onChange={(e) => setSearch(e.target.value.trim())} type="text" className="form-control" placeholder="Search your food right now" />
                     <Link to={"/search=" + search}>
                         <button onClick={() => window.scrollBy(0, 500)} className="btn btn-danger search-btn btn-rounded">Search</button>
                     </Link>

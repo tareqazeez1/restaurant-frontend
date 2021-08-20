@@ -6,13 +6,14 @@
     height:80vh;
 }
 .hero .search-box{
-    position: relative;
+    padding: 6px 30px;
+	margin-left: -35px;
 }
 .search-btn{
-    position: absolute;
-    top: 0;
-    right: 20px;
+   
     height: 100%;
+    padding: 6px 30px;
+	margin-left: -35px;
 	border-radius: 25px!important;
 }
 .hero .form-control{

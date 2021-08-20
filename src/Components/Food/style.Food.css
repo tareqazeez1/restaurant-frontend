@@ -2,10 +2,12 @@
     color: black!important;
     cursor: pointer;
     font-weight: 900;
+    
 }
 
 .food-area nav .active{
-    color: rgb(255, 69, 101)
+    color: rgb(255, 69, 101);
+    text-decoration: none;
 }
 
 .food-area nav .active::after{
@@ -17,6 +19,7 @@
     border: 3px solid rgb(255, 69, 101);
     border-radius: 5px;
     display: block;
+    text-decoration: none;
 }
 .food-area .card{
     border: none;
@@ -28,11 +31,11 @@
     margin: 0 auto;
 }
 
-.food-area div > a {
-    color: #000!important;
+.food-area div a {
+    color: rgb(3, 0, 0)!important;
 }
 
-.food-area div > a:hover{
+.food-area div a:hover{
     text-decoration: none;
 }
 
