@@ -19,7 +19,7 @@ const Food = () => {
 
     useEffect(() => {
         setFoods(data)
-    }, [foods.length])
+    }, [])
 
 
     // initials set data 
@@ -32,21 +32,21 @@ const Food = () => {
             <div className="container">
                 <nav>
                     <ul className="nav justify-content-center">
-                        <li onClick={() => setSelectedCategory("Breakfast")} className="nav-item">
-                            <span to="breakfast" className={selectedCategory === "Breakfast" ? "active nav-link" : "nav-link"}>Breakfast</span>
+                        <li onClick={() => setSelectedCategory("Indian")} className="nav-item">
+                            <span to="breakfast" className={selectedCategory === "Indian" ? "active nav-link" : "nav-link"}>Indian</span>
                         </li>
-                        <li onClick={() => setSelectedCategory("Lunch")} className="nav-item">
-                            <span to="breakfast" className={selectedCategory === "Lunch" ? "active nav-link" : "nav-link"}>Lunch</span>
+                        <li onClick={() => setSelectedCategory("Italian")} className="nav-item">
+                            <span to="breakfast" className={selectedCategory === "Italian" ? "active nav-link" : "nav-link"}>Italian</span>
                         </li>
-                        <li onClick={() => setSelectedCategory("Dinner")} className="nav-item">
-                            <span to="breakfast" className={selectedCategory === "Dinner" ? "active nav-link" : "nav-link"}>Dinner</span>
+                        <li onClick={() => setSelectedCategory("Chinese")} className="nav-item">
+                            <span to="breakfast" className={selectedCategory === "Chinese" ? "active nav-link" : "nav-link"}>Chinese</span>
                         </li>
                     </ul>
                 </nav>
 
                 {/* <div className="row my-5">
 
-                    <Preloader visibility={preloaderVisibility} />
+                    <Loading visibility={loadingVisibility} />
                     {
                         selectedFoods.map(food => <FoodItem key={food.id} food={food} />)
                     }
