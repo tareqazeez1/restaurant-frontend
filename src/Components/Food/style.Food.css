@@ -1,12 +1,13 @@
 .food-area nav li{
     color: black!important;
     cursor: pointer;
+    font-size: 25px;
     font-weight: 900;
     
 }
 
 .food-area nav .active{
-    color: rgb(255, 69, 101);
+    color: rgb(255, 69, 101)!important;
     text-decoration: none;
 }
 
@@ -15,8 +16,8 @@
     width: 95%;
     margin: 0 auto;
     height: 5px;
-    background-color: rgb(255, 69, 101);
-    border: 3px solid rgb(255, 69, 101);
+    background-color: rgb(255, 69, 101)!important;
+    border: 3px solid rgb(255, 69, 101)!important;
     border-radius: 5px;
     display: block;
     text-decoration: none;
@@ -41,4 +42,8 @@
 
 .food-area .card:hover{
     box-shadow: 0 5px 13px 0px #eae8e87a;
+}
+
+.nav-link {
+    color: black!important;
 }

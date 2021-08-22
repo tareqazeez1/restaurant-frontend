@@ -15,11 +15,13 @@ const Food = () => {
     const [foods, setFoods] = useState([]);
 
     // To set foods category wise
-    const [selectedCategory, setSelectedCategory] = useState('Breakfast');
+    const [selectedCategory, setSelectedCategory] = useState('Indian');
 
     useEffect(() => {
         setFoods(data)
     }, [])
+
+
 
 
     // initials set data 
@@ -33,13 +35,13 @@ const Food = () => {
                 <nav>
                     <ul className="nav justify-content-center">
                         <li onClick={() => setSelectedCategory("Indian")} className="nav-item">
-                            <span to="breakfast" className={selectedCategory === "Indian" ? "active nav-link" : "nav-link"}>Indian</span>
+                            <span to="Indian" className={selectedCategory === "Indian" ? "active nav-link" : "nav-link"}>Indian</span>
                         </li>
                         <li onClick={() => setSelectedCategory("Italian")} className="nav-item">
-                            <span to="breakfast" className={selectedCategory === "Italian" ? "active nav-link" : "nav-link"}>Italian</span>
+                            <span to="Indian" className={selectedCategory === "Italian" ? "active nav-link" : "nav-link"}>Italian</span>
                         </li>
                         <li onClick={() => setSelectedCategory("Chinese")} className="nav-item">
-                            <span to="breakfast" className={selectedCategory === "Chinese" ? "active nav-link" : "nav-link"}>Chinese</span>
+                            <span to="Indian" className={selectedCategory === "Chinese" ? "active nav-link" : "nav-link"}>Chinese</span>
                         </li>
                     </ul>
                 </nav>
@@ -58,14 +60,15 @@ const Food = () => {
 
 
                     {
-                        selectedFoods.map(food => <FoodItem foods={foods} />)
+                        selectedFoods.map(food => <FoodItem id={food.id} food={food} />)
                     }
+
 
                 </div>
 
 
                 <div className="text-center">
-                    <button disabled className="btn btn-secondary">Check Out Your Food</button>
+                    <button className="btn btn-secondary">Check Out Your Food</button>
 
                     {/* {
                         props.cart.length ?

@@ -11,12 +11,12 @@ const NavBar = () => {
         <nav className="navbar navbar-expand navbar-light bg-white py-2 fixed-top">
             <div className="container">
                 <Link className="navbar-brand">
-                    <img src="https://sarinasolution.files.wordpress.com/2016/09/logo-sharina.jpg?w=400" alt="Hot Onion Logo" />
+                    <img src="https://sarinahotel.com/images/logo.png" alt="Hot Onion Logo" />
                 </Link>
 
                 <ul className="navbar-nav align-items-center">
                     <li className="nav-item active">
-                        <Link to="/checkout" className="nav-link"><FontAwesomeIcon className="cart-icon" icon={faCartArrowDown} /><span className="badge bg-light">5</span></Link>
+                        <Link to="/checkout" className="nav-link"><FontAwesomeIcon className="cart-icon" icon={faCartArrowDown} /><span className="badge bg-dark">5</span></Link>
                     </li>
                     <li className="nav-item">
                         login

@@ -7,6 +7,7 @@ import './App.css'; import {
 import NavBar from './Components/NavBar/NavBar';
 import Hero from './Components/Hero/Hero';
 import Food from './Components/Food/Food';
+import Footer from './Components/Footer/Footer';
 
 
 
@@ -20,17 +21,14 @@ function App() {
         <NavBar />
         <Hero />
         <Switch>
-          <Route path="/home">
+          <Route path="/">
             <Food />
           </Route>
           <Route path="/users">
             <Food />
           </Route>
-          <Route path="/">
-            <Food />
-          </Route>
         </Switch>
-
+        <Footer />
 
       </Router>
 

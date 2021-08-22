@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './style.FoodItem.css';
 
 const FoodItem = (props) => {
 
-    const { name, description, price, img } = props.foods;
+    const { title, description, price, img } = props.food;
 
     return (
         <div className="col-md-4 mb-4">
@@ -11,10 +12,11 @@ const FoodItem = (props) => {
                 <div className="card text-center">
                     <img src={img} alt="" className="card-img-top" />
                     <div className="card-body">
-                        <h5>{name}</h5>
+                        <h5>{title}</h5>
                         <p>{description}</p>
-                        <h4>${price.toFixed(2)}</h4>
+                        <h4>${price}</h4>
                     </div>
+                    <div><button className="btn btn-danger btn-positioned">Order Now</button></div>
                 </div>
             </Link>
         </div>

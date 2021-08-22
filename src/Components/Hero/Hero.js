@@ -8,15 +8,16 @@ const Hero = () => {
     const { search, setSearch } = useState('');
 
     return (
-        <section className="hero d-flex align-items-center text-center">
+        <section className="hero-area">
             <div className="container">
-                <h1>Order the best dishes from us right now!</h1>
-
-                <div className="search-box col-md-6 my-5 mx-auto">
-                    <input id="query" value={search} onChange={(e) => setSearch(e.target.value.trim())} type="text" className="form-control" placeholder="Search your food right now" />
-                    <Link to={"/search=" + search}>
-                        <button onClick={() => window.scrollBy(0, 500)} className="btn btn-danger search-btn btn-rounded">Search</button>
-                    </Link>
+                <div className="row">
+                    <div className="col text-center hero-content">
+                        <h2>Order you favorite food !</h2>
+                        <div className="hero-input">
+                            <input className="input" type="text" value={search} onChange={(e) => setSearch(e.target.value.trim())} placeholder="Search your food...." />
+                            <button className="btn btn-danger">Search</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
