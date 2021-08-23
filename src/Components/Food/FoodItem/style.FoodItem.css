@@ -3,12 +3,16 @@
     cursor: pointer;
   }
   .single-item:hover {
+    border: 1px solid lightgray!important;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
     text-decoration: none;
   }
   .card {
-      border-radius: 10px;
-      border: 1px solid lightgray!important;
+      border-radius: 15px;
+      /* border: 1px solid lightgray!important; */
+      border: none;
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    text-decoration: none;
   } 
   
   .card-body {
@@ -25,5 +29,9 @@
 
   .btn-positioned {
     position: relative;
-    top: 19px;
+    top: 35px;
+  }
+
+  .card h5 {
+    color:rgb(255, 69, 101)
   }
